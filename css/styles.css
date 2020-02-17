@@ -1,3 +1,6 @@
 body{
-  background-image: url("image/Elinacastle.jpg");
+  background-image: url("images/backimage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
