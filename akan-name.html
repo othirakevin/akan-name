@@ -1,96 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">  
-
-  <head>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>akan name system</title>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="js/bootstrap.js">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AKAN NAMES</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
+	<div class="container">
     <div class="row">
       <div class="page-header">
-        <h1> AKAN NAME SYSTEM</h1>
-        <P>Have you ever wondered what day of the week you were born? or even which akan name 
-          could have been asigned to you? Wonder no more, This is a web application that will help you know the day of the week that you were born and 
-          the Ghanian name (Akan name) the will be assigned to you depending on your respective gender (Male or Female).
-        </P>
+        <h1>AKAN NAMING  SYSTEM </h1>
+        
       </div>
-    </div>
-  </div>
+      <P>Have you ever wondered what day of the week you were born? or even which akan name 
+        could have been asigned to you? Wonder no more, This is a web application that will help you know the day of the week that you were born and 
+        the Ghanian name (Akan name) the will be assigned to you depending on your respective gender (Male or Female).
+      </P>
+      <div class="form">
+        <label>YEAR OF BIRTH</label><br>
+        <input type="number" id="year" min="1900" max="2099" step="1" placeholder="YYYY" value="" />
+        <br><br>
+        <label>BIRTH MONTH:</label><br>
+        <input type="number" id="month" min="01" max="12" step="1" placeholder="MM"  /><br><br>
+        <label>Day OF BIRTH </label><br>
+        <input type="number" name="DAY" id="day" min="01" max="31" placeholder="DD" ><br><br>
+        <label>GENDER</label><br>
+        <div id="gender">
+          <input type="radio" name="gender" id="gender" value="male" > Male<br>
+          <input type="radio" name="gender" value="female">Female<br>
+        </div>
   
-
-
-<div class="col-md-4 mt30 akan-form">
-  <h5>Please Enter Your Birthdate Here:</h5>
-  <div class="add-stylist-form">
-    <form>
-      <div class="form-group mb15">
-                <label class="label">Birthday</label>
-                 <div class="input-group mb15">
-                  <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                  <input type="text" placeholder="mm/dd/yyyy" id="myBirthDate" class="form-control" autocomplete="off">
-               </div>
-            </div>   
-
-      <div class="form-group mb15">
-                <label class="label">Gender</label>
-                 <div class="rdio rdio-default fs11">
-                      <input type="radio" name="gender" id="male" value="Male">
-                      <label for="male">&nbsp;&nbsp;Male</label>
-                  </div>
-                  <div class="rdio rdio-default fs11">
-                      <input type="radio" name="gender" value="Female" id="female">
-                      <label for="female">&nbsp;&nbsp;Female</label>
-                   </div>
-            </div>
-            <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
-            <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>		
-    </form>	
-  
-    <form>
-      <table>
-        <tr>
-          <td>
-            Name: 
-          </td>
-          <td>
-            <input type="text" placeholder="Name" name'>
-          </td>
-        </tr>
-        <tr> 
-          <td>
-            Century:
-          </td>
-          <td>
-            <input type="number" placeholder="Century" name'>
-          </td>
-        </tr>
-          <td>
-            Year:
-          </td>
-          <td>
-            Month:
-          </td>
-          <td>
-            Day:
-          </td>
-        </tr>
-      </table>
-    </form>
-  </div>
-
-  <hr>
-  <div class="your-akan-name">
-    <p id="message" class="output"></p>
-  </div>
-</div>
-<div class="col-md-2"></div>
-</div>
-    
-  </form>
-  
-</body>
-</html>
