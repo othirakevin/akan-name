@@ -24,3 +24,8 @@ body{
   float: none;
   font-size: 18p
 }
+.form {
+
+  display: inline;
+  display: inline-block;
+}
