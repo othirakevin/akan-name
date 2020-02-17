@@ -1,3 +1,11 @@
+.text-box{
+  margin: 20px;
+  padding: 100px;
+  
+  
+}
+
+
 body{
   background-image: url("images/backimage.jpeg");
   background-repeat: no-repeat;

@@ -30,32 +30,34 @@
 </style>
 <body>
 	<div class="container">
-    <div class="row">
-      <div class="page-header">
-        <h1>AKAN NAMING  SYSTEM </h1>
-        
-      </div>
-      <P>Have you ever wondered what day of the week you were born? or even which akan name 
-        could have been asigned to you? Wonder no more, This is a web application that will help you know the day of the week that you were born and 
-        the Ghanian name (Akan name) the will be assigned to you depending on your respective gender (Male or Female).
-      </P>
-      <div class="form">
-        <label>YEAR OF BIRTH</label><br>
-        <input type="number" id="year" min="1900" max="2099" step="1" placeholder="YYYY" value="" />
-        <br><br>
-        <label>BIRTH MONTH:</label><br>
-        <input type="number" id="month" min="01" max="12" step="1" placeholder="MM"  /><br><br>
-        <label>Day OF BIRTH </label><br>
-        <input type="number" name="DAY" id="day" min="01" max="31" placeholder="DD" ><br><br>
-        <label>GENDER</label><br>
-        <div id="gender">
-          <input type="radio" name="gender" id="gender" value="male" > Male<br>
-          <input type="radio" name="gender" value="female">Female<br>
+    <div class="text-box">
+        <div class="row">
+          <div class="page-header">
+            <h1>AKAN NAMING  SYSTEM </h1>
+            
+          </div>
+          <P>Have you ever wondered what day of the week you were born? or even which akan name 
+            could have been asigned to you? Wonder no more, This is a web application that will help you know the day of the week that you were born and 
+            the Ghanian name (Akan name) the will be assigned to you depending on your respective gender (Male or Female).
+          </P>
+          <div class="form">
+            <label>YEAR OF BIRTH</label><br>
+            <input type="number" id="year" min="1900" max="2099" step="1" placeholder="YYYY" value="" />
+            <br><br>
+            <label>BIRTH MONTH:</label><br>
+            <input type="number" id="month" min="01" max="12" step="1" placeholder="MM"  /><br><br>
+            <label>Day OF BIRTH </label><br>
+            <input type="number" name="DAY" id="day" min="01" max="31" placeholder="DD" ><br><br>
+            <label>GENDER</label><br>
+            <div id="gender">
+              <input type="radio" name="gender" id="gender" value="male" > Male<br>
+              <input type="radio" name="gender" value="female">Female<br>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="results()">
+          </div>
         </div>
-        <input type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="results()">
+        <script src="js/script.js"></script>
       </div>
-    </div>
-    <script src="js/script.js"></script>
-  </div>
+	</div>
 </body>
 </html>
