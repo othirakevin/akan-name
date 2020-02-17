@@ -41,19 +41,24 @@
                 could have been asigned to you? Wonder no more, This is a web application that will help you know the day of the week that you were born and 
                 the Ghanian name (Akan name) the will be assigned to you depending on your respective gender (Male or Female).
               </P>
-              <div class="sidebar"  class="form">
-                <label>YEAR OF BIRTH</label><br>  <label>BIRTH MONTH:</label><br>
-                <input type="number" id="year" min="1900" max="2099" step="1" placeholder="YYYY" value="" />
-                <br><br>
-                
-                <input type="number" id="month" min="01" max="12" step="1" placeholder="MM"  /><br><br>
-                <label>Day OF BIRTH </label><br>
-                <input type="number" name="DAY" id="day" min="01" max="31" placeholder="DD" ><br><br>
-                <label>GENDER</label><br>
-                <div id="gender">
-                  <input type="radio" name="gender" id="gender" value="male" > Male<br>
-                  <input type="radio" name="gender" value="female">Female<br>
-            </div>     
+                <div class="sidebar">
+                  <div style="margin-right:-50%" >
+
+                  <div class="form">
+                    <label>YEAR OF BIRTH</label><br>  
+                    <input type="number" id="year" min="1900" max="2099" step="1" placeholder="YYYY" value="" />
+                    <br><br>
+                    <label>BIRTH MONTH:</label><br>
+                    <input type="number" id="month" min="01" max="12" step="1" placeholder="MM"  /><br><br>
+                    <label>Day OF BIRTH </label><br>
+                    <input type="number" name="DAY" id="day" min="01" max="31" placeholder="DD" ><br><br>
+                    <label>GENDER</label><br>
+                    <div id="gender">
+                      <input type="radio" name="gender" id="gender" value="male" > Male<br>
+                      <input type="radio" name="gender" value="female">Female<br>
+                </div>  
+                  </div>
+              </div>   
             </div>
             <input type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="results()">
           </div>
