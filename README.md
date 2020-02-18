@@ -8,3 +8,7 @@ Java script.
 
 # Setup unstructions
 The url opens on any web browser and acces tho the internet
+
+#project link.
+
+https://othirakevin.github.io/akan-name/
